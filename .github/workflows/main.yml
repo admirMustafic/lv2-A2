@@ -1,0 +1,15 @@
+name: Primjer
+
+
+on:
+  push:
+    branches:
+      - main # Pokrece workflow na ’push’ u ’main’ granu
+
+jobs:
+    run-echo:
+      runs-on: ubuntu-latest # Pokrece job na najnovijem Ubuntu runneru
+      
+      steps:
+      - name: Echo RTKPP LV2
+        run: echo "RTKPP LV2" # Izvrsava naredbu
